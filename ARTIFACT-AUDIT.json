@@ -1,0 +1,13 @@
+{
+  "originalJar": "Mekanism-26.1.2-10.8.0.atm11-current.jar",
+  "originalSha256": "bad16ac44894d93772dc5251dcd69dd7c97d5b73feb9a970943a893cb6689025",
+  "publishedArchiveSha256": "e8634932525e90ffe713109f8eb94c11bc8e827f1df73a06a79874887bcf4dc2",
+  "classes": 3025,
+  "classMajors": [
+    69
+  ],
+  "licenseEmbedded": true,
+  "archiveIntegrity": "PASS",
+  "jsonParsing": "PASS",
+  "runtimeValidation": "Compiled artifact located in the previous ATM11 server correction package. Archive integrity and metadata verified; no new full-pack runtime validation was performed for this publication."
+}
