@@ -3,6 +3,8 @@
 
 # Mekanism: Version Locked
 
+![Mekanism: Version Locked](https://media.forgecdn.net/attachments/description/1713956/description_b2ee3cab-45fa-4b37-ad6e-bf885711dcd2.png)
+
 An unofficial community-made port of Mekanism for Minecraft 26.1.2. This project provides the main Mekanism mod adapted specifically for Minecraft 26.1.2 and NeoForge, including its industrial machines, ore and chemical processing, resource transport, and multiblock technology.
 
 ## Version Locked
