@@ -24,7 +24,7 @@ Full credit goes to Aidan C. Brady and all original Mekanism contributors. This 
 
 ## Bugs and Compatibility
 
-This community port may contain bugs and compatibility issues. Compatibility with every other mod is not guaranteed. Report problems through this fan project's support channel, including your Minecraft version, NeoForge version, installed mod list, logs and crash report where relevant. Issue tracker: [https://github.com/victor0hxz/Mekanism-Unofficial-ATM11/issues](https://github.com/victor0hxz/Mekanism-Unofficial-ATM11/issues).
+This community port may contain bugs and compatibility issues. Compatibility with every other mod is not guaranteed. Report problems through this fan project's support channel, including your Minecraft version, NeoForge version, installed mod list, logs and crash report where relevant. Issue tracker: [https://github.com/victor0hxz/Mekanism-Version-Locked/issues](https://github.com/victor0hxz/Mekanism-Version-Locked/issues).
 
 ## Check out also!
 
@@ -47,7 +47,7 @@ This port is intended for the All the Mods 11 (ATM11) 0.9.0-beta compatibility p
 - Original project: Mekanism
 - Original authors: Aidan C. Brady and contributors
 - License: MIT
-- Port GitHub: [https://github.com/victor0hxz/Mekanism-Unofficial-ATM11](https://github.com/victor0hxz/Mekanism-Unofficial-ATM11)
-- Version Locked release: [https://github.com/victor0hxz/Mekanism-Unofficial-ATM11/releases/tag/atm11-instance-2026-10-08](https://github.com/victor0hxz/Mekanism-Unofficial-ATM11/releases/tag/atm11-instance-2026-10-08)
+- Port GitHub: [https://github.com/victor0hxz/Mekanism-Version-Locked](https://github.com/victor0hxz/Mekanism-Version-Locked)
+- Version Locked release: [https://github.com/victor0hxz/Mekanism-Version-Locked/releases/tag/atm11-instance-2026-10-08](https://github.com/victor0hxz/Mekanism-Version-Locked/releases/tag/atm11-instance-2026-10-08)
 
 Thank you to Aidan C. Brady and everyone who contributed to Mekanism over the years.
