@@ -41,6 +41,7 @@ public class GeneralConfig extends BaseMekanismConfig {
     public final CachedDoubleValue heatPerFuelTick;
     public final CachedIntValue fuelwoodTickMultiplier;
     public final CachedDoubleValue resistiveHeaterEfficiency;
+    public final CachedIntValue resistiveHeaterMaxEnergyUsage;
     public final CachedDoubleValue superheatingHeatTransfer;
     public final CachedIntValue maxSolarNeutronActivatorRate;
     public final CachedIntValue fluidItemFillRate;
@@ -142,6 +143,9 @@ public class GeneralConfig extends BaseMekanismConfig {
               .defineInRange("fuelwoodTickMultiplier", 1, 1, 1_000));
         resistiveHeaterEfficiency = CachedDoubleValue.wrap(this, MekanismConfigTranslations.GENERAL_RESISTIVE_EFFICIENCY.applyToBuilder(builder)
               .defineInRange("resistiveEfficiency", 0.6, 0, 1));
+        resistiveHeaterMaxEnergyUsage = CachedIntValue.wrap(this, builder
+              .comment("Maximum energy usage configurable in a Resistive Heater, in FE per tick. Requires a restart. Zero disables heating.")
+              .defineInRange("resistiveHeaterMaxEnergyUsage", Integer.MAX_VALUE, 0, Integer.MAX_VALUE));
         builder.pop();
 
         MekanismConfigTranslations.GENERAL_CARDBOARD.applyToBuilder(builder).push("cardboard_box");

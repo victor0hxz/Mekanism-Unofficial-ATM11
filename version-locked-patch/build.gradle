@@ -1,0 +1,31 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.146'
+}
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+neoForge { version = '26.1.2.109' }
+repositories { mavenCentral() }
+def baseJar = file(providers.gradleProperty('baseJar').getOrElse('../upstream-binary/Mekanism-Version-Locked-26.1.2-2.1.jar'))
+dependencies {
+    implementation files(baseJar)
+    compileOnly 'org.jetbrains:annotations:26.0.1'
+    compileOnly 'org.jspecify:jspecify:1.0.0'
+}
+sourceSets.main.java {
+    srcDir '../src/main/java'
+    include 'mekanism/client/gui/machine/GuiResistiveHeater.java'
+    include 'mekanism/common/config/GeneralConfig.java'
+    include 'mekanism/common/capabilities/energy/ResistiveHeaterEnergyContainer.java'
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar', Jar) {
+    archiveFileName = 'Mekanism-Version-Locked-26.1.2-2.2.jar'
+    from(zipTree(baseJar)) {
+        exclude 'META-INF/MANIFEST.MF'
+        exclude 'mekanism/client/gui/machine/GuiResistiveHeater.class'
+        exclude 'mekanism/common/config/GeneralConfig.class'
+        exclude 'mekanism/common/capabilities/energy/ResistiveHeaterEnergyContainer.class'
+    }
+    duplicatesStrategy = DuplicatesStrategy.FAIL
+    manifest.from(zipTree(baseJar).matching { include 'META-INF/MANIFEST.MF' }.singleFile)
+}

@@ -32,6 +32,7 @@ public class ResistiveHeaterEnergyContainer extends MachineEnergyContainer<TileE
     }
 
     public void updateEnergyUsage(int energyUsage) {
+        energyUsage = Math.clamp(energyUsage, 0, mekanism.common.config.MekanismConfig.general.resistiveHeaterMaxEnergyUsage.get());
         //TODO: Do we want to make this support transactions?
         currentEnergyPerTick = energyUsage;
         setMaxEnergy(AttributeEnergy.STORAGE_MULTIPLIER * energyUsage);

@@ -1,0 +1,10 @@
+{
+  "baseSha256": "9757e40cf72e092321354d64e68260cf035d14bbfe568f74e4e26849a7a7fb10",
+  "patchedSha256": "f9778ba6484599963b5503dec6c30384de7b52b978b00338d4a6ee372deaf4e6",
+  "replacedClasses": [
+    "mekanism/common/config/GeneralConfig.class",
+    "mekanism/common/capabilities/energy/ResistiveHeaterEnergyContainer.class",
+    "mekanism/client/gui/machine/GuiResistiveHeater.class"
+  ],
+  "allOtherClassesPreserved": true
+}

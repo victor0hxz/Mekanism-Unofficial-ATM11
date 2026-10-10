@@ -59,7 +59,7 @@ public class GuiResistiveHeater extends GuiMekanismTile<TileEntityResistiveHeate
         GuiTextField energyUsageField = addRenderableWidget(new GuiTextField(this, 50, 51, 76, 12))
               .setInputValidator(InputValidator.DIGIT)
               .configureDigitalInput(this::setEnergyUsage)
-              .setMaxLength(7);
+              .setMaxLength(10);
         setInitialFocus(energyUsageField);
     }
 
